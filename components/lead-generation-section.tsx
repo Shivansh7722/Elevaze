@@ -130,11 +130,13 @@ export function LeadGenerationSection() {
                   </div>
 
                   <Button
-                    type="submit"
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all"
+                    asChild
                   >
-                    Secure My Strategy Call Now
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
+                      Secure My Strategy Call Now
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
                   </Button>
 
                   <div className="text-center text-sm text-muted mt-2">

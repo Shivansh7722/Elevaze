@@ -24,9 +24,12 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
+              asChild
             >
-              Claim Your Free Strategy Call
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
+                Claim Your Free Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
 

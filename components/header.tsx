@@ -23,7 +23,11 @@ export function Header() {
           </a>
         </nav>
 
-        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Started</Button>
+        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+          <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
+            Get Started
+          </a>
+        </Button>
       </div>
     </header>
   )
