@@ -29,7 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} antialiased`}>
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.png" type="image/png" />
       </head>
       <body>{children}</body>
     </html>
