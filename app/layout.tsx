@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Transform your business with AI receptionists and agents that handle calls, qualify leads, and book appointments automatically.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
@@ -23,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} antialiased`}>
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body>{children}</body>
     </html>
   )
