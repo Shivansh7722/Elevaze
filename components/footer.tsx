@@ -4,9 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">E</span>
-            </div>
+            <img src="/elevaze-logo.png" alt="Elevaze" className="h-8 w-auto" />
             <span className="text-xl font-bold">Elevaze</span>
           </div>
           <p className="text-background/80 leading-relaxed max-w-md mx-auto">

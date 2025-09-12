@@ -29,7 +29,7 @@ export function Header() {
         </nav>
 
         <Button
-          className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
           asChild
         >
           <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
