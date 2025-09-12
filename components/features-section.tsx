@@ -4,39 +4,34 @@ import { Phone, Users, Calendar, MessageSquare, Clock, TrendingUp } from "lucide
 const features = [
   {
     icon: Phone,
-    title: "24/7 Professional Call Handling",
-    description:
-      "Our AI receptionists answer every call with perfect professionalism, ensuring your customers always reach a helpful voice, day or night.",
+    title: "24/7 Professional Answering",
+    description: "Never miss a call again. Your AI receptionist answers every call professionally, day or night.",
   },
   {
     icon: Calendar,
-    title: "Automatic Appointment Booking",
+    title: "Instant Appointment Booking",
     description:
-      "Seamlessly integrate with your calendar to book appointments instantly, handle rescheduling, and send confirmations without any manual work.",
+      "Automatically books appointments, handles rescheduling, and sends confirmations - no manual work required.",
   },
   {
     icon: Users,
-    title: "Intelligent Lead Qualification",
-    description:
-      "Smart conversation flows that ask the right questions, qualify prospects effectively, and route high-value leads directly to you.",
+    title: "Smart Lead Qualification",
+    description: "Asks the right questions and routes qualified prospects directly to you for maximum conversion.",
   },
   {
     icon: MessageSquare,
     title: "Instant Customer Support",
-    description:
-      "Handle common questions, provide information about your services, and resolve simple issues immediately - keeping customers satisfied.",
+    description: "Handles common questions and provides information about your services immediately.",
   },
   {
     icon: TrendingUp,
-    title: "Improved Conversion Rates",
-    description:
-      "Professional follow-up sequences, appointment reminders, and consistent communication that turns more prospects into customers.",
+    title: "Higher Conversion Rates",
+    description: "Professional follow-ups and consistent communication that turns more prospects into customers.",
   },
   {
     icon: Clock,
-    title: "Always Available Service",
-    description:
-      "Your AI receptionist works around the clock, never takes breaks, and ensures consistent service quality for every caller.",
+    title: "Always Available",
+    description: "Works 24/7 without breaks, ensuring consistent service quality for every caller.",
   },
 ]
 
@@ -49,8 +44,8 @@ export function FeaturesSection() {
             Complete AI Receptionist Solution
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Transform your customer service with AI receptionists that handle calls, book appointments, and manage
-            customer interactions with the same care and professionalism as your best human staff.
+            Transform your customer service with AI that handles calls, books appointments, and converts prospects -
+            just like your best human staff.
           </p>
         </div>
 

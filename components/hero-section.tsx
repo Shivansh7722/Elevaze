@@ -6,48 +6,52 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-background py-20 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
+          <div className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <CheckCircle className="mr-2 h-4 w-4" />
             Trusted by 100+ Businesses
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Never Miss Another <span className="text-primary">Customer Call</span> Again
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             Our AI receptionists handle calls 24/7, book appointments automatically, and ensure every customer gets the
             attention they deserve - even when you're busy or after hours.
           </p>
 
-          <div className="mt-10 flex items-center justify-center">
+          <div className="mt-10 flex items-center justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
               asChild
             >
               <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
                 Claim Your Free Strategy Call
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </Button>
           </div>
 
-          <div className="mt-16 flex items-center justify-center space-x-8 text-sm text-muted">
-            <div className="flex items-center space-x-2">
+          <div className="mt-16 flex items-center justify-center space-x-8 text-sm text-muted animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000">
+            <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
               <div className="flex -space-x-1">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="h-6 w-6 rounded-full bg-primary/20 border-2 border-background" />
+                  <div
+                    key={i}
+                    className="h-6 w-6 rounded-full bg-primary/20 border-2 border-background transition-all duration-300 hover:scale-110"
+                    style={{ animationDelay: `${i * 100}ms` }}
+                  />
                 ))}
               </div>
               <span>★★★★★ 4.9/5 (127 reviews)</span>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
               <span>🚀 98% appointment booking rate</span>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
               <span>⚡ 24/7 instant response time</span>
             </div>
           </div>
