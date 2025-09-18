@@ -1,71 +1,76 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap, Clock, Shield } from "lucide-react"
+import { ArrowRight, Phone, Calendar, Clock } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50 py-12 sm:py-20 lg:py-32">
+    <section className="relative py-24 lg:py-32">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          <div
-            className="inline-flex items-center rounded-full bg-blue-600 px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-4 duration-700"
-            style={{ backgroundColor: "#2563eb", color: "#ffffff" }}
-          >
-            <Zap className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-white" />
-            <span className="text-white">AI-Powered Solution</span>
-          </div>
+        <div className="mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left side - Content */}
+            <div className="text-center lg:text-left fade-in">
+              <div className="inline-flex items-center rounded-full bg-card border px-6 py-2 text-sm font-medium mb-8">
+                <div className="w-2 h-2 bg-primary rounded-full mr-3 pulse-glow" />
+                <span className="text-foreground">Super trained AI receptionist</span>
+              </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 leading-tight">
-            Never Miss Another{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Customer Call
-            </span>{" "}
-            Again
-          </h1>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-tight mb-6">
+                Super trained AI receptionist <span className="text-primary">never gets tired, speaks like human</span>
+              </h1>
 
-          <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg lg:text-xl leading-relaxed text-gray-600 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500 px-4 sm:px-0">
-            Our AI receptionists handle calls 24/7, book appointments automatically, and ensure every customer gets the
-            attention they deserve - even when you're busy or after hours.
-          </p>
+              <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+                While your receptionists are busy, customers call competitors who answer immediately.
+              </p>
 
-          <div className="mt-8 sm:mt-10 flex items-center justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700 px-4 sm:px-0">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 rounded-xl w-full sm:w-auto"
-              asChild
-            >
-              <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
-                <span className="sm:hidden">Get Free Strategy Call</span>
-                <span className="hidden sm:inline">Claim Your Free Strategy Call</span>
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-            </Button>
-          </div>
-
-          <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000 px-4 sm:px-0">
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
-              <div className="flex items-center justify-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-                  <Clock className="h-4 w-4 text-white" />
-                </div>
-                <span className="text-gray-700 font-semibold">24/7 Availability</span>
+              <div className="mt-8 flex items-center justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-base font-medium rounded-lg"
+                  asChild
+                >
+                  <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
+                    See It In Action
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
-              <div className="flex items-center justify-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
-                  <Zap className="h-4 w-4 text-white" />
+            <div className="relative fade-in">
+              <div className="phone-mockup p-8 max-w-sm mx-auto">
+                {/* Phone header */}
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-border">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                      <Phone className="h-5 w-5 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">Incoming Call</div>
+                      <div className="text-sm text-muted-foreground">+1 (555) 123-4567</div>
+                    </div>
+                  </div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full pulse-glow" />
                 </div>
-                <span className="text-gray-700 font-semibold">Instant Response</span>
-              </div>
-            </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
-              <div className="flex items-center justify-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                  <Shield className="h-4 w-4 text-white" />
+                {/* Call interface */}
+                <div className="space-y-4">
+                  <div className="bg-muted rounded-lg p-4">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Calendar className="h-4 w-4 text-primary" />
+                      <span className="text-sm font-medium text-foreground">Appointment Booked</span>
+                    </div>
+                    <div className="text-sm text-muted-foreground">Dr. Smith - Dental Cleaning</div>
+                    <div className="flex items-center space-x-2 mt-2">
+                      <Clock className="h-3 w-3 text-muted-foreground" />
+                      <span className="text-xs text-muted-foreground">Thursday, 2:00 PM</span>
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="text-sm text-primary font-medium">Call Duration: 1:23</div>
+                    <div className="text-xs text-muted-foreground mt-1">Customer satisfied • Appointment confirmed</div>
+                  </div>
                 </div>
-                <span className="text-gray-700 font-semibold">Secure & Reliable</span>
               </div>
             </div>
           </div>

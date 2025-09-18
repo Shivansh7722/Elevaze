@@ -1,8 +1,10 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturesSection } from "@/components/features-section"
-import { LeadGenerationSection } from "@/components/lead-generation-section"
 import { Footer } from "@/components/footer"
+import { HowItWorks } from "@/components/how-it-works"
+import { IndustriesSection } from "@/components/industries-section"
+import { CTASection } from "@/components/cta-section"
 
 export default function HomePage() {
   return (
@@ -10,7 +12,9 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <FeaturesSection />
-      <LeadGenerationSection />
+      <HowItWorks />
+      <IndustriesSection />
+      <CTASection />
       <Footer />
     </main>
   )

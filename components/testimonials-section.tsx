@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 const testimonials = [
   {
     quote:
-      "Our AI receptionist handles all our appointment bookings flawlessly. We've reduced no-shows by 35% and our front desk staff can focus on patient care.",
+      "Our AI receptionist handles all our appointment bookings flawlessly. We've reduced no-shows by 35% and our front desk staff can focus on customer care.",
     author: "Dr. Amanda Foster",
     title: "Owner, Boston Aesthetic Center",
   },

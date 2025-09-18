@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,7 +20,7 @@ export function Header() {
         </div>
 
         <button
-          className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -28,47 +28,55 @@ export function Header() {
         </button>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-muted hover:text-foreground transition-all duration-300 hover:scale-105">
-            Features
+          <a
+            href="#features"
+            className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
+          >
+            How It Works
           </a>
-          <a href="#contact" className="text-muted hover:text-foreground transition-all duration-300 hover:scale-105">
-            Contact
+          <a
+            href="#contact"
+            className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
+          >
+            Book Demo
           </a>
         </nav>
 
         <Button
-          className="hidden md:flex bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          className="hidden md:flex bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
           asChild
         >
           <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
-            Get Started
+            <Phone className="mr-2 h-4 w-4" />
+            Free Call
           </a>
         </Button>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg">
           <nav className="flex flex-col p-4 space-y-4">
             <a
               href="#features"
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2 text-lg font-medium"
+              className="text-muted-foreground hover:text-primary transition-colors py-2 text-lg font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
+              How It Works
             </a>
             <a
               href="#contact"
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2 text-lg font-medium"
+              className="text-muted-foreground hover:text-primary transition-colors py-2 text-lg font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              Book Demo
             </a>
             <Button
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white mt-4 w-full py-3 text-lg"
+              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground mt-4 w-full py-3 text-lg"
               asChild
             >
               <a href="https://calendly.com/elevaze77" target="_blank" rel="noopener noreferrer">
-                Get Started
+                <Phone className="mr-2 h-4 w-4" />
+                Free Call
               </a>
             </Button>
           </nav>
