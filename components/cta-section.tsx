@@ -8,10 +8,10 @@ export function CTASection() {
       <div className="container mx-auto px-4">
         <Card className="mx-auto max-w-4xl border-0 bg-gradient-to-r from-primary to-secondary shadow-2xl rounded-3xl overflow-hidden">
           <CardContent className="p-12 text-center">
-            <h2 className="text-4xl font-bold text-white mb-6 sm:text-5xl">Never Miss Another Customer</h2>
+            <h2 className="text-4xl font-bold text-white mb-6 sm:text-5xl">Ready to Transform Your Business?</h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Get your super trained AI receptionist working for you in 24 hours. Start capturing every lead and booking
-              every appointment.
+              Get a custom AI agent tailored specifically for your business. We build intelligent solutions that work
+              exactly how you need them to.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -23,17 +23,9 @@ export function CTASection() {
                 Get Started Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4 rounded-xl font-semibold bg-transparent"
-              >
-                See Demo
-              </Button>
             </div>
 
-            <p className="text-white/70 text-sm mt-6">No setup fees • 30-day money back guarantee • Cancel anytime</p>
+            <p className="text-white/70 text-sm mt-6">Custom AI agents built for your business needs</p>
           </CardContent>
         </Card>
       </div>

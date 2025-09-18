@@ -1,36 +1,41 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Stethoscope, Briefcase, Wrench, Scissors, Car, Home } from "lucide-react"
+import { Stethoscope, Sparkles, Wrench, Scissors, Heart, Users } from "lucide-react"
 
 const industries = [
   {
     icon: Stethoscope,
-    title: "Medical & Dental",
-    description: "Handle appointment scheduling, insurance questions, and patient inquiries",
+    title: "Dental Practices",
+    description:
+      "Handle appointment scheduling, insurance verification, emergency calls, and patient follow-ups with HIPAA compliance",
   },
   {
-    icon: Briefcase,
-    title: "Legal Services",
-    description: "Schedule consultations, screen potential clients, manage case inquiries",
+    icon: Sparkles,
+    title: "Med Spas & Aesthetics",
+    description:
+      "Book consultations, manage treatment schedules, handle pricing inquiries, and follow up on skincare routines",
   },
   {
-    icon: Wrench,
-    title: "Home Services",
-    description: "Book service calls, provide quotes, schedule maintenance appointments",
+    icon: Heart,
+    title: "Healthcare & Wellness",
+    description:
+      "Schedule appointments, verify insurance, handle prescription refills, and manage patient communications",
   },
   {
     icon: Scissors,
-    title: "Beauty & Wellness",
-    description: "Manage salon bookings, handle cancellations, upsell services",
+    title: "Beauty & Salon Services",
+    description: "Manage bookings, handle cancellations, upsell treatments, and coordinate with multiple stylists",
   },
   {
-    icon: Car,
-    title: "Automotive",
-    description: "Schedule repairs, book test drives, handle service appointments",
+    icon: Users,
+    title: "Therapy & Counseling",
+    description:
+      "Schedule sessions, handle sensitive inquiries, manage cancellations, and coordinate with insurance providers",
   },
   {
-    icon: Home,
-    title: "Real Estate",
-    description: "Schedule showings, qualify leads, manage property inquiries",
+    icon: Wrench,
+    title: "Professional Services",
+    description:
+      "Book consultations, screen potential clients, manage service appointments, and handle urgent requests",
   },
 ]
 
@@ -40,10 +45,10 @@ export function IndustriesSection() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
-            Perfect For Any Service Business
+            Built For Dental & Service Businesses
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Our AI receptionist adapts to your industry and speaks your language
+            Specialized AI that understands appointment-based businesses and speaks your patients' language
           </p>
         </div>
 

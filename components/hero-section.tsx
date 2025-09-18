@@ -15,7 +15,17 @@ export function HeroSection() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-tight mb-6">
-                Super trained AI receptionist <span className="text-primary">never gets tired, speaks like human</span>
+                <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  Super trained AI
+                </span>{" "}
+                that{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  handles your calls
+                </span>{" "}
+                like a{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  super human
+                </span>
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">

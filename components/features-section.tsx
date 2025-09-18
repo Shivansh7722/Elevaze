@@ -1,114 +1,90 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { TrendingUp, Target, Brain, Zap, Database, Lock, Sparkles, ArrowRight } from "lucide-react"
+import { Phone, MessageSquare, Calendar, Clock, Users, CheckCircle, Sparkles } from "lucide-react"
 
 const features = [
   {
-    icon: Brain,
-    title: "Speaks Like Your Best Employee",
-    description:
-      "Trained on your business, handles complex questions naturally, and never sounds robotic. Customers can't tell it's AI.",
-    gradient: "from-primary to-secondary",
-    metrics: "Human-Like",
+    icon: Phone,
+    title: "Speaks Like Human",
+    description: "Customers can't tell it's AI",
+    gradient: "from-blue-500 to-purple-500",
+    stat: "100%",
+    statLabel: "Human-Like",
   },
   {
-    icon: Target,
-    title: "Books Appointments Live On Call",
-    description:
-      "Checks your calendar, finds the perfect slot, books the appointment, and sends confirmation—all while the customer is still talking.",
-    gradient: "from-secondary to-accent",
-    metrics: "Live Booking",
+    icon: Calendar,
+    title: "Books Live On Call",
+    description: "Checks calendar & books instantly",
+    gradient: "from-green-500 to-teal-500",
+    stat: "2 sec",
+    statLabel: "Booking Time",
   },
   {
-    icon: TrendingUp,
-    title: "Updates Your CRM Instantly",
-    description:
-      "Captures every detail, creates customer profiles, logs call notes, and updates your system before the call even ends.",
-    gradient: "from-accent to-primary",
-    metrics: "Auto-Updated",
+    icon: CheckCircle,
+    title: "Updates CRM",
+    description: "Captures details automatically",
+    gradient: "from-orange-500 to-red-500",
+    stat: "Auto",
+    statLabel: "Data Entry",
   },
   {
-    icon: Zap,
-    title: "Answers 24/7, Never Sleeps",
-    description:
-      "Picks up every call in 2 rings, handles multiple calls simultaneously, and never takes a sick day or vacation.",
-    gradient: "from-primary to-accent",
-    metrics: "Always On",
+    icon: Clock,
+    title: "Never Sleeps",
+    description: "Answers 24/7 in 2 rings",
+    gradient: "from-yellow-500 to-orange-500",
+    stat: "24/7",
+    statLabel: "Always On",
   },
   {
-    icon: Database,
-    title: "Handles Complex Requests",
-    description:
-      "Reschedules appointments, processes cancellations, takes payments, and handles insurance questions—all seamlessly.",
-    gradient: "from-secondary to-primary",
-    metrics: "Full Service",
+    icon: Users,
+    title: "Handles Everything",
+    description: "Reschedules, payments, insurance",
+    gradient: "from-purple-500 to-pink-500",
+    stat: "All",
+    statLabel: "Requests",
   },
   {
-    icon: Lock,
-    title: "Sends Confirmations Automatically",
-    description:
-      "Emails appointment details, sends reminders, and follows up with customers—all without you lifting a finger.",
-    gradient: "from-accent to-secondary",
-    metrics: "Auto-Follow Up",
+    icon: MessageSquare,
+    title: "Auto Follow-Up",
+    description: "Sends confirmations & reminders",
+    gradient: "from-teal-500 to-blue-500",
+    stat: "Auto",
+    statLabel: "Follow Up",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-24 bg-gradient-to-br from-green-50 via-background to-green-50">
+    <section id="features" className="py-16 bg-gradient-to-br from-slate-50 via-white to-slate-50">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl text-center mb-20">
-          <div className="inline-flex items-center rounded-full glass-effect px-6 py-3 text-sm font-semibold mb-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border/20">
-            <Sparkles className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-foreground">What It Actually Does</span>
+        <div className="mx-auto max-w-3xl text-center mb-16">
+          <div className="inline-flex items-center rounded-full bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-medium mb-6 shadow-sm border border-slate-200">
+            <Sparkles className="mr-2 h-4 w-4 text-blue-500" />
+            <span className="text-slate-700">What It Actually Does</span>
           </div>
 
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 leading-[1.1]">
-            Super Trained AI Receptionist{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-              Never Gets Tired
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
+            <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+              Super Trained AI Receptionist Never Gets Tired
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Get a super trained AI receptionist that handles calls with expert-level capabilities, works 24/7 without
-            breaks, and serves your customers around the clock:
+          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Handles calls with expert-level capabilities, works 24/7 without breaks
           </p>
         </div>
 
-        <div className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <Card
+            <div
               key={index}
-              className="border-0 bg-card shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 rounded-3xl overflow-hidden group relative"
+              className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border border-slate-100"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-center mb-4">
+                <feature.icon className="h-6 w-6 text-white" />
+              </div>
 
-              <CardHeader className="p-8 relative">
-                <div
-                  className={`h-16 w-16 rounded-2xl bg-gradient-to-r ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                >
-                  <feature.icon className="h-8 w-8 text-white" />
-                </div>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">{feature.title}</h3>
 
-                <div className="absolute top-6 right-6 bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full border border-primary/20">
-                  {feature.metrics}
-                </div>
-
-                <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
-                  {feature.title}
-                </CardTitle>
-              </CardHeader>
-
-              <CardContent className="px-8 pb-8 relative">
-                <CardDescription className="text-muted-foreground leading-relaxed text-base mb-4">
-                  {feature.description}
-                </CardDescription>
-
-                <div className="flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span>Learn more</span>
-                  <ArrowRight className="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-              </CardContent>
-            </Card>
+              <p className="text-slate-600 leading-relaxed">{feature.description}</p>
+            </div>
           ))}
         </div>
       </div>
