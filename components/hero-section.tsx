@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle } from "lucide-react"
+import { ArrowRight, Zap, Clock, Shield } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -10,8 +10,8 @@ export function HeroSection() {
             className="inline-flex items-center rounded-full bg-blue-600 px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-4 duration-700"
             style={{ backgroundColor: "#2563eb", color: "#ffffff" }}
           >
-            <CheckCircle className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-white" />
-            <span className="text-white">Trusted by 100+ Businesses</span>
+            <Zap className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-white" />
+            <span className="text-white">AI-Powered Solution</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 leading-tight">
@@ -44,34 +44,28 @@ export function HeroSection() {
           <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-1000 px-4 sm:px-0">
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
               <div className="flex items-center justify-center space-x-2">
-                <div className="flex -space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <div
-                      key={i}
-                      className="h-6 w-6 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 border-2 border-white transition-all duration-300 hover:scale-110"
-                      style={{ animationDelay: `${i * 100}ms` }}
-                    />
-                  ))}
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                  <Clock className="h-4 w-4 text-white" />
                 </div>
-                <span className="text-gray-700 font-semibold">★★★★★ 4.9/5 (127 reviews)</span>
+                <span className="text-gray-700 font-semibold">24/7 Availability</span>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
               <div className="flex items-center justify-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">🚀</span>
+                  <Zap className="h-4 w-4 text-white" />
                 </div>
-                <span className="text-gray-700 font-semibold">98% appointment booking rate</span>
+                <span className="text-gray-700 font-semibold">Instant Response</span>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
               <div className="flex items-center justify-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">⚡</span>
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                  <Shield className="h-4 w-4 text-white" />
                 </div>
-                <span className="text-gray-700 font-semibold">24/7 instant response time</span>
+                <span className="text-gray-700 font-semibold">Secure & Reliable</span>
               </div>
             </div>
           </div>

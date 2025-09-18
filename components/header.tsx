@@ -31,12 +31,6 @@ export function Header() {
           <a href="#features" className="text-muted hover:text-foreground transition-all duration-300 hover:scale-105">
             Features
           </a>
-          <a
-            href="#testimonials"
-            className="text-muted hover:text-foreground transition-all duration-300 hover:scale-105"
-          >
-            Testimonials
-          </a>
           <a href="#contact" className="text-muted hover:text-foreground transition-all duration-300 hover:scale-105">
             Contact
           </a>
@@ -61,13 +55,6 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Features
-            </a>
-            <a
-              href="#testimonials"
-              className="text-gray-600 hover:text-blue-600 transition-colors py-2 text-lg font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
             </a>
             <a
               href="#contact"

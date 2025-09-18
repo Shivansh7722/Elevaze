@@ -158,17 +158,9 @@ export function LeadGenerationSection() {
 
             <div className="space-y-4 sm:space-y-6 animate-in fade-in slide-in-from-right-6 duration-1000 delay-500">
               <div className="relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-105 overflow-hidden">
-                <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-xl animate-pulse">
-                    MOST POPULAR
-                  </div>
-                </div>
-
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center mt-4">
-                  Complete AI Receptionist System
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Complete AI Receptionist System</h3>
 
                 <div className="grid gap-4 mb-8">
                   <div className="group flex items-center justify-between p-3 rounded-2xl bg-gray-50 hover:bg-blue-50 transition-all duration-300 hover:scale-105">
@@ -216,7 +208,7 @@ export function LeadGenerationSection() {
                       <div className="w-10 h-10 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <Clock className="h-5 w-5 text-white" />
                       </div>
-                      <span className="text-gray-900 font-semibold text-base">24/7 Priority Support (3 Months)</span>
+                      <span className="text-gray-900 font-semibold text-base">24/7 Priority Support</span>
                     </div>
                     <span className="font-bold text-gray-600 text-lg">$1,800</span>
                   </div>
@@ -226,26 +218,36 @@ export function LeadGenerationSection() {
                       <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <Shield className="h-5 w-5 text-white" />
                       </div>
-                      <span className="text-gray-900 font-semibold text-base">3 Months Support & Monitoring</span>
+                      <span className="text-gray-900 font-semibold text-base">Advanced Analytics Dashboard</span>
                     </div>
-                    <span className="font-bold text-gray-600 text-lg">$2,500</span>
-                  </div>
-                </div>
-
-                <div className="border-t-2 border-gray-200 pt-6 mb-6">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-xl font-bold text-gray-900">Total Value:</span>
-                    <span className="text-xl font-bold text-gray-400 line-through">$10,000</span>
+                    <span className="font-bold text-gray-600 text-lg">$1,000</span>
                   </div>
                 </div>
 
                 <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center border-2 border-blue-200 hover:border-blue-300 transition-all duration-500 hover:shadow-xl">
-                  <div className="text-sm sm:text-base font-semibold text-blue-700 mb-2">Your Investment Today:</div>
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-2 sm:mb-3">$4,997</div>
-                  <div className="text-base sm:text-lg font-bold text-green-600 mb-1 sm:mb-2">
-                    Save $5,003 This Month
+                  <div className="text-sm sm:text-base font-semibold text-blue-700 mb-2">Total Value:</div>
+
+                  <div className="text-2xl sm:text-3xl font-black text-gray-400 line-through mb-2">$12,000</div>
+
+                  <div className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
+                    <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                      Your Investment: $4,997
+                    </span>
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600 font-medium">Limited Time Special Pricing</div>
+
+                  <div className="bg-white rounded-lg p-4 mb-4 border-l-4 border-blue-500">
+                    <div className="text-sm font-bold text-gray-900 mb-2">💰 Save $7,003 Today</div>
+                    <div className="text-xs text-gray-600 space-y-1">
+                      <div>✓ Complete AI receptionist system</div>
+                      <div>✓ Full setup and training included</div>
+                      <div>✓ 24/7 support and maintenance</div>
+                      <div>✓ Custom business integration</div>
+                    </div>
+                  </div>
+
+                  <div className="text-sm text-gray-600 font-medium">
+                    Final pricing may vary based on business requirements
+                  </div>
                 </div>
               </div>
 
@@ -257,11 +259,11 @@ export function LeadGenerationSection() {
                   <div className="text-xl font-bold mb-2">🚀 Ready to Get Started?</div>
                   <div className="text-lg font-semibold mb-3">Professional AI Receptionist Setup</div>
                   <div className="text-blue-100 mb-4 text-base leading-relaxed">
-                    We provide comprehensive setup and training to ensure your AI receptionist delivers exceptional
-                    service from day one.
+                    We provide comprehensive setup and training tailored to your specific business requirements. Every
+                    solution is customized based on your scale, industry, and unique needs.
                   </div>
                   <div className="text-sm text-blue-200 font-medium">
-                    Book your strategy call to learn more about our process
+                    Book your strategy call to get your personalized quote
                   </div>
                 </div>
               </div>
