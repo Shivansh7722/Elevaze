@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { HowItWorks } from "@/components/how-it-works"
 import { IndustriesSection } from "@/components/industries-section"
 import { CTASection } from "@/components/cta-section"
+import RevenueImpactSection from "@/components/revenue-impact-section"
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <FeaturesSection />
+      <RevenueImpactSection />
       <HowItWorks />
       <IndustriesSection />
       <CTASection />
