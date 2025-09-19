@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Stethoscope, Sparkles, Wrench, Scissors, Heart, Users } from "lucide-react"
 
 const industries = [
@@ -41,37 +40,49 @@ const industries = [
 
 export function IndustriesSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+    <section className="py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
-            Built For Dental & Service Businesses
+        <div className="mx-auto max-w-4xl text-center mb-12">
+          <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-6">
+            Built For{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Dental & Service
+            </span>{" "}
+            Businesses
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Specialized AI that understands appointment-based businesses and speaks your patients' language
+          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Specialized AI that understands appointment-based businesses and speaks your patients' language with
+            precision and care
           </p>
         </div>
 
-        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mx-auto max-w-5xl space-y-6">
           {industries.map((industry, index) => (
-            <Card
+            <div
               key={index}
-              className="border-0 bg-card shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl hover:scale-[1.02]"
+              className="group flex items-start gap-6 p-6 rounded-3xl bg-white/60 backdrop-blur-sm border border-slate-200/50 hover:bg-white/80 hover:border-blue-200/60 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100/50"
             >
-              <CardHeader className="p-6">
-                <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center mb-4">
+              <div className="flex-shrink-0">
+                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <industry.icon className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-lg font-bold text-foreground">{industry.title}</CardTitle>
-              </CardHeader>
+              </div>
 
-              <CardContent className="px-6 pb-6">
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  {industry.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">
+                  {industry.title}
+                </h3>
+                <p className="text-base text-slate-600 leading-relaxed">{industry.description}</p>
+              </div>
+            </div>
           ))}
+        </div>
+
+        <div className="mx-auto max-w-3xl text-center mt-12 p-6 rounded-3xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+          <p className="text-base text-slate-700 leading-relaxed">
+            No matter your industry, our AI adapts to your specific needs, terminology, and customer expectations to
+            deliver a seamless experience that feels authentically <em>yours</em>.
+          </p>
         </div>
       </div>
     </section>
