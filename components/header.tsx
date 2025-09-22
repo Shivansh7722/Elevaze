@@ -27,20 +27,7 @@ export function Header() {
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
 
-        <nav className="hidden md:flex items-center space-x-8">
-          <a
-            href="#features"
-            className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
-          >
-            How It Works
-          </a>
-          <a
-            href="#contact"
-            className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
-          >
-            Book Demo
-          </a>
-        </nav>
+        <nav className="hidden md:flex items-center space-x-8"></nav>
 
         <Button
           className="hidden md:flex bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -56,20 +43,6 @@ export function Header() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg">
           <nav className="flex flex-col p-4 space-y-4">
-            <a
-              href="#features"
-              className="text-muted-foreground hover:text-primary transition-colors py-2 text-lg font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </a>
-            <a
-              href="#contact"
-              className="text-muted-foreground hover:text-primary transition-colors py-2 text-lg font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Book Demo
-            </a>
             <Button
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground mt-4 w-full py-3 text-lg"
               asChild
