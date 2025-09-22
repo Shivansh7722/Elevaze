@@ -1,9 +1,41 @@
+"use client"
+
+import type React from "react"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Calendar, ArrowRight } from "lucide-react"
 
 export function DiscoveryCallSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+  })
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    })
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    // Check if all fields are filled
+    if (formData.name && formData.company && formData.email && formData.phone) {
+      // Redirect to Calendly with form data as URL parameters
+      const calendlyUrl = `https://calendly.com/elevaze77?name=${encodeURIComponent(formData.name)}&company=${encodeURIComponent(formData.company)}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.phone)}`
+      window.open(calendlyUrl, "_blank")
+    } else {
+      alert("Please fill in all fields before booking your discovery call.")
+    }
+  }
+
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -15,7 +47,7 @@ export function DiscoveryCallSection() {
           </p>
 
           <div className="bg-white rounded-2xl shadow-lg border p-8 max-w-md mx-auto">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="space-y-2 text-left">
                 <Label htmlFor="name" className="text-sm font-medium text-gray-700">
                   Full Name
@@ -24,7 +56,10 @@ export function DiscoveryCallSection() {
                   id="name"
                   type="text"
                   placeholder="Enter your full name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                  required
                 />
               </div>
 
@@ -36,7 +71,10 @@ export function DiscoveryCallSection() {
                   id="company"
                   type="text"
                   placeholder="Enter your company name"
+                  value={formData.company}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                  required
                 />
               </div>
 
@@ -48,7 +86,10 @@ export function DiscoveryCallSection() {
                   id="email"
                   type="email"
                   placeholder="Enter your email address"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                  required
                 />
               </div>
 
@@ -60,7 +101,10 @@ export function DiscoveryCallSection() {
                   id="phone"
                   type="tel"
                   placeholder="Enter your phone number"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                  required
                 />
               </div>
 
