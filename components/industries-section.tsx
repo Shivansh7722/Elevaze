@@ -56,30 +56,30 @@ export function IndustriesSection() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-5xl space-y-6">
+        <div className="mx-auto max-w-5xl space-y-4">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group flex items-start gap-6 p-6 rounded-3xl bg-white/60 backdrop-blur-sm border border-slate-200/50 hover:bg-white/80 hover:border-blue-200/60 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100/50"
+              className="group flex items-start gap-4 p-4 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/50 hover:bg-white/80 hover:border-blue-200/60 transition-all duration-500 hover:shadow-lg hover:shadow-blue-100/50"
             >
               <div className="flex-shrink-0">
-                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <industry.icon className="h-6 w-6 text-white" />
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <industry.icon className="h-5 w-5 text-white" />
                 </div>
               </div>
 
-              <div className="flex-1 pt-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">
+              <div className="flex-1 pt-0.5">
+                <h3 className="text-lg font-bold text-slate-900 mb-1.5 group-hover:text-blue-700 transition-colors duration-300">
                   {industry.title}
                 </h3>
-                <p className="text-base text-slate-600 leading-relaxed">{industry.description}</p>
+                <p className="text-sm text-slate-600 leading-relaxed">{industry.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mx-auto max-w-3xl text-center mt-12 p-6 rounded-3xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
-          <p className="text-base text-slate-700 leading-relaxed">
+        <div className="mx-auto max-w-3xl text-center mt-10 p-5 rounded-2xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+          <p className="text-sm text-slate-700 leading-relaxed">
             No matter your industry, our AI adapts to your specific needs, terminology, and customer expectations to
             deliver a seamless experience that feels authentically <em>yours</em>.
           </p>

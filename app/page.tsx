@@ -4,8 +4,9 @@ import { FeaturesSection } from "@/components/features-section"
 import { Footer } from "@/components/footer"
 import { HowItWorks } from "@/components/how-it-works"
 import { IndustriesSection } from "@/components/industries-section"
-import { CTASection } from "@/components/cta-section"
 import RevenueImpactSection from "@/components/revenue-impact-section"
+import { HipaaComplianceSection } from "@/components/hipaa-compliance-section"
+import { DiscoveryCallSection } from "@/components/discovery-call-section"
 
 export default function HomePage() {
   return (
@@ -16,7 +17,8 @@ export default function HomePage() {
       <RevenueImpactSection />
       <HowItWorks />
       <IndustriesSection />
-      <CTASection />
+      <HipaaComplianceSection />
+      <DiscoveryCallSection />
       <Footer />
     </main>
   )
